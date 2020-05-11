@@ -1,0 +1,19 @@
+{
+  "name": "dia-agent-service",
+  "version": "0.1.0",
+  "main": "./index.js",
+  "author": "help.munewio@gmail.com",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "debug": "ndb ./index.js"
+  },
+  "dependencies": {
+    "dia-agents-baseservice": "../dia-agents-baseservice"
+  },
+  "devDependencies": {
+    "ndb": "^1.1.5"
+  }
+}
