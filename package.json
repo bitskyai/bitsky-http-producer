@@ -11,7 +11,7 @@
     "debug": "ndb ./index.js"
   },
   "dependencies": {
-    "dia-agents-baseservice": "../dia-agents-baseservice"
+    "dia-agent-baseservice": "0.1.0"
   },
   "devDependencies": {
     "ndb": "^1.1.5"
