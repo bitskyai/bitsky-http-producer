@@ -11,7 +11,7 @@
     "debug": "ndb ./index.js"
   },
   "dependencies": {
-    "bitspider-agent-baseservice": "^0.2.1"
+    "bitspider-agent-baseservice": "0.3.1"
   },
   "devDependencies": {
     "ndb": "^1.1.5"

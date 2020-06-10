@@ -27,10 +27,8 @@ module.exports = {
   },
   stopServer: async function stopServer() {
     try {
-      if(__baseservice.server){
-        __baseservice.server.destroy();
-      }
-      __baseservice.server = undefined;
+      await __baseservice.stop();
+      __baseservice = undefined;
     } catch (err) {
       throw err;
     }
