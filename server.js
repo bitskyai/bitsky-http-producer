@@ -16,10 +16,8 @@ module.exports = {
       // merge with customer configs
       configs = _.merge({}, defaultConfigs, configs);
       let baseservice = __baseservice;
-      if(!baseservice){
-        baseservice = new Baseservice(configs);
-        __baseservice = baseservice;
-      }
+      baseservice = new Baseservice(configs);
+      __baseservice = baseservice;
       baseservice.express(exprssOptions || {});
       baseservice.routers(indexOptions || {})
       await baseservice.listen();
