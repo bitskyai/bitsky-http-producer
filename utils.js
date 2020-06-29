@@ -5,7 +5,9 @@
 function getAgentConfigs() {
   try {
     // add configurations specific for this agent type
-    return {};
+    return {
+      SERVICE_NAME: "munew-service-agent"
+    };
   } catch (err) {
     console.error("service->getAgentConfigs fail!", err);
   }
