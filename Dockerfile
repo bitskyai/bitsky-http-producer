@@ -1,9 +1,9 @@
 FROM mhart/alpine-node:12
 
-LABEL maintainer="Munew docker maintainers <help.bitskyai@gmail.com>"
+LABEL maintainer="BitSky docker maintainers <help.bitskyai@gmail.com>"
 
 # create app directory
-WORKDIR /usr/munew
+WORKDIR /usr/bitsky
 
 
 COPY package*.json ./
@@ -19,8 +19,8 @@ EXPOSE 8090
 CMD ["node", "index.js"]
 
 # Metadata
-LABEL munew.image.vendor="Munew" \
-    munew.image.url="https://munew.io" \
-    munew.image.title="Munew Service Agent" \
-    munew.image.description="Response for executing tasks that don't require chrome, based on Axios" \
-    munew.image.documentation="https://docs.munew.io"
+LABEL bitsky.image.vendor="BitSky" \
+    bitsky.image.url="https://bitsky.ai" \
+    bitsky.image.title="BitSky Service Agent" \
+    bitsky.image.description="Response for executing tasks that don't require chrome, based on Axios" \
+    bitsky.image.documentation="https://docs.bitsky.ai"

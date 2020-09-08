@@ -1,6 +1,6 @@
 {
-  "name": "munew-agent-service",
-  "description": "Service Agent is good for crawl data from none SPA",
+  "name": "bitsky-service-producer",
+  "description": "Service Producer is good for crawl data from none SPA",
   "keywords": [
     "web crawling",
     "web scraping",
@@ -9,18 +9,18 @@
     "automation",
     "nodejs"
   ],
-  "website": "https://munew.io",
-  "logo": "https://raw.githubusercontent.com/munew/dia-electron/master/assets/icons/munew512.png",
+  "website": "https://bitsky.ai",
+  "logo": "https://raw.githubusercontent.com/bitskyai/bitsky-desktop-app/master/assets/icons/munew512.png",
   "env": {
-    "MUNEW_BASE_URL": {
-      "description": "Your Munew Application's base url. Example: https://munew.herokuapp.com",
+    "BITSKY_BASE_URL": {
+      "description": "Your BitSky Application's base url. Example: https://bitsky.herokuapp.com",
       "required": true
     },
     "GLOBAL_ID": {
       "description": "Your headless agent's globalID. ",
       "required": true
     },
-    "AGENT_SERIAL_ID": {
+    "PRODUCER_SERIAL_ID": {
       "description": "An UUID to idenity this agent, better you keep same value for this agent. If you didn't provide then it will automatically generate one for you. Example: b7f6a100-9a35-4df3-bef9-2c1f6d8c866e",
       "required": false
     },

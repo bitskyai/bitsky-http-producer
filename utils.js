@@ -6,7 +6,7 @@ function getAgentConfigs() {
   try {
     // add configurations specific for this agent type
     return {
-      SERVICE_NAME: "munew-service-agent"
+      SERVICE_NAME: "bitsky-service-producer"
     };
   } catch (err) {
     console.error("service->getAgentConfigs fail!", err);
