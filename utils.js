@@ -4,7 +4,7 @@
 // Get Specific Agent Configuration
 function getAgentConfigs() {
   try {
-    // add configurations specific for this agent type
+    // add configurations specific for this producer type
     return {
       SERVICE_NAME: "bitsky-service-producer"
     };
