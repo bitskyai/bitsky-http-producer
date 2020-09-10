@@ -1,6 +1,6 @@
 {
   "name": "@bitskyai/service-producer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./index.js",
   "author": "help.bitskyai@gmail.com",
   "license": "Apache-2.0",
@@ -12,7 +12,7 @@
     "debug": "ndb ./index.js"
   },
   "dependencies": {
-    "@bitskyai/producer-sdk": "0.1.0"
+    "@bitskyai/producer-sdk": "0.1.1"
   },
   "devDependencies": {
     "ndb": "^1.1.5"
