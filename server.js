@@ -1,6 +1,6 @@
 const Baseservice = require("@bitskyai/producer-sdk");
 const _ = require('lodash');
-const { getAgentConfigs } = require("./utils");
+const { getProducerConfigs } = require("./utils");
 
 let __baseservice = undefined;
 
@@ -12,7 +12,7 @@ module.exports = {
   ) {
     try {
       // get default configurations
-      const defaultConfigs = getAgentConfigs();
+      const defaultConfigs = getProducerConfigs();
       // merge with customer configs
       configs = _.merge({}, defaultConfigs, configs);
       let baseservice = __baseservice;

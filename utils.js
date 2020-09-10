@@ -1,18 +1,18 @@
 /* eslint-disable no-process-env */
 // Env vars should be casted to correct types
 
-// Get Specific Agent Configuration
-function getAgentConfigs() {
+// Get Specific Producer Configuration
+function getProducerConfigs() {
   try {
     // add configurations specific for this producer type
     return {
       SERVICE_NAME: "bitsky-service-producer"
     };
   } catch (err) {
-    console.error("service->getAgentConfigs fail!", err);
+    console.error("service->getProducerConfigs fail!", err);
   }
 }
 
 module.exports = {
-  getAgentConfigs,
+  getProducerConfigs,
 };
