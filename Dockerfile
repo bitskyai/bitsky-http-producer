@@ -10,10 +10,10 @@ COPY package*.json ./
 COPY index.js ./
 COPY server.js ./
 COPY utils.js ./
-COPY yarn.lock ./
+COPY package-lock.json ./
 
 # Only install production dependencies
-RUN yarn --production=true
+RUN npm ci --only=production
 
 EXPOSE 8090
 CMD ["node", "index.js"]
