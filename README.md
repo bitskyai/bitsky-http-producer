@@ -1,4 +1,4 @@
-# BitSky Service Producer
+# BitSky HTTP Producer
 
 ## Configuration
 

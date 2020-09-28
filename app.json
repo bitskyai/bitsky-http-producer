@@ -1,6 +1,6 @@
 {
   "name": "bitsky-service-producer",
-  "description": "Service Producer is good for crawl data from none single page application",
+  "description": "HTTP Producer is good for crawl data from none single page application",
   "keywords": [
     "web crawling",
     "web scraping",
