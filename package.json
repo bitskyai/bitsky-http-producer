@@ -12,7 +12,7 @@
     "debug": "ndb ./index.js"
   },
   "dependencies": {
-    "@bitskyai/producer-sdk": "0.2.0"
+    "@bitskyai/producer-sdk": "0.2.2"
   },
   "devDependencies": {
     "ndb": "^1.1.5"
