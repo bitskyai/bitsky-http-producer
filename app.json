@@ -1,0 +1,39 @@
+{
+  "name": "bitsky-service-producer",
+  "description": "HTTP Producer is good for crawl data from none single page application",
+  "keywords": [
+    "web crawling",
+    "web scraping",
+    "crawl",
+    "scrape",
+    "automation",
+    "nodejs"
+  ],
+  "website": "https://www.bitsky.ai",
+  "logo": "https://raw.githubusercontent.com/bitskyai/bitsky-desktop-app/master/assets/icons/bitsky512.png",
+  "env": {
+    "BITSKY_BASE_URL": {
+      "description": "Your BitSky Application's base url. Example: https://bitsky.herokuapp.com",
+      "required": true
+    },
+    "GLOBAL_ID": {
+      "description": "Global ID of the service producer you want to connect. Example: 6e56474d-0c75-4125-b5a8-27b0ccf71390",
+      "required": true
+    },
+    "PRODUCER_SERIAL_ID": {
+      "description": "An UUID to idenity this producer, better you keep same value for this producer. If you didn't provide then it will automatically generate one for you. Example: b7f6a100-9a35-4df3-bef9-2c1f6d8c866e",
+      "required": false
+    },
+    "LOG_LEVEL": {
+      "description": "Winston logging level. Default is `info`, find detail from https://github.com/winstonjs/winston#logging-levels",
+      "value": "info",
+      "required": false
+    }
+  },
+  "success_url": "/",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
